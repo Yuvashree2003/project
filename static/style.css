@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+#chatbox {
+    width: 90%;
+    max-width: 700px;
+    height: 400px;
+    margin: 20px auto;
+    background: #fff;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    overflow-y: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user, .bot {
+    margin: 10px 0;
+    padding: 10px 15px;
+    border-radius: 20px;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+.user {
+    background-color: #dcf8c6;
+    align-self: flex-end;
+    text-align: right;
+    margin-left: auto;
+}
+
+.bot {
+    background-color: #f0f0f0;
+    align-self: flex-start;
+    text-align: left;
+    margin-right: auto;
+}
+
+#inputRow {
+    width: 90%;
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#inputRow input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+#inputRow button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#inputRow button:hover {
+    background-color: #45a049;
+}
+
+#uploadBox, #calendarBox {
+    width: 90%;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 15px;
+    background: #fff;
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    display: none;
+}
+
+#uploadBox h3, #calendarBox h3 {
+    margin-top: 0;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="file"],
+input[type="date"],
+input[type="email"],
+select {
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#calendarBox button,
+#uploadBox button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#calendarBox button:hover,
+#uploadBox button:hover {
+    background-color: #45a049;
+}
